@@ -8,7 +8,7 @@ COPY usr /usr
 COPY ublue-firstboot /usr/bin
 COPY recipe.yml /etc/ublue-recipe.yml
 
-#COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
+COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 
 RUN rpm-ostree override remove firefox firefox-langpacks
 
