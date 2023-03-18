@@ -16,6 +16,9 @@ RUN wget https://copr.fedorainfracloud.org/coprs/david35mm/pamixer/repo/fedora-"
 wget https://copr.fedorainfracloud.org/coprs/nani8ot/river-git/repo/fedora-"${FEDORA_MAJOR_VERSION}"/nani8ot-river-git-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/_copr_nani8ot-river-git.repo && \
 wget https://copr.fedorainfracloud.org/coprs/nani8ot/waybar-git/repo/fedora-"${FEDORA_MAJOR_VERSION}"/nani8ot-waybar-git-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/_copr_nani8ot-waybar-git.repo
 
+# mask rfkill and power-profiles-daemon, to make tlp work (systemd preset in usr)
+RUN systemctl mask systemd-rfkill.service systemd-rfkill.socket power-profiles-daemon.service
+
 RUN echo "-- Installing RPMs defined in recipe.yml --" && \
     rpm_packages=$(yq '.rpms[]' < /etc/ublue-recipe.yml) && \
     for pkg in $rpm_packages; do \
