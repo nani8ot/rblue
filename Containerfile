@@ -1,6 +1,6 @@
 ARG FEDORA_MAJOR_VERSION=37
 
-FROM ghcr.io/ublue-os/silverblue-extended:${FEDORA_MAJOR_VERSION}
+FROM ghcr.io/dhoell/silverblue-extended:${FEDORA_MAJOR_VERSION}
 
 COPY etc /etc
 COPY usr /usr
