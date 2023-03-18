@@ -33,13 +33,13 @@ You can customize this image to your needs by adding packages to install in the 
 To rebase an existing Silverblue/Kinoite installation to the latest build:
 
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/startingpoint:latest
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/nani8ot/rblue:latest
 ```
 
 This repository builds date tags as well, so if you want to rebase to a particular day's build:
 
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/startingpoint:20221217
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/nani8ot/rblue:20221217
 ```
 
 The `latest` tag will automatically point to the latest build. Note that when a new version of Fedora is released that the `latest` tag will get updated to that latest release automatically.
@@ -68,6 +68,6 @@ Check the [just website](https://just.systems) for tips on modifying and adding 
 
 These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/cosign/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command:
 
-    cosign verify --key cosign.pub ghcr.io/ublue-os/base
+    cosign verify --key cosign.pub ghcr.io/nani8ot/base
 
 If you're forking this repo you should [read the docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on keeping secrets in github. You need to [generate a new keypair](https://docs.sigstore.dev/cosign/overview/) with cosign. The public key can be in your public repo (your users need it to check the signatures), and you can paste the private key in Settings -> Secrets -> Actions.
