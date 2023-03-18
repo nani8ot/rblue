@@ -35,6 +35,7 @@ rpms:
   - grim
   - slurp
   - gnome-tweaks
+  - blueman
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
