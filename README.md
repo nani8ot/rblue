@@ -33,13 +33,13 @@ You can customize this image to your needs by adding packages to install in the 
 To rebase an existing Silverblue/Kinoite installation to the latest build:
 
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/nani8ot/rblue:latest
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/nani8ot/startingpoint:latest
 ```
 
 This repository builds date tags as well, so if you want to rebase to a particular day's build:
 
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/nani8ot/rblue:20221217
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/nani8ot/startingpoint:20221217
 ```
 
 The `latest` tag will automatically point to the latest build. Note that when a new version of Fedora is released that the `latest` tag will get updated to that latest release automatically.
