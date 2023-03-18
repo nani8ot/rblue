@@ -1,5 +1,40 @@
 rpms:
   - zenity
+  - neovim
+  - xdg-desktop-portal-wlr
+  - network-manager-applet
+  - nm-connection-editor
+  - xfce-polkit
+  - clipman
+  - corectrl
+  - ddcutil
+  - mako
+  - sway
+  - swaybg
+  - lm_sensors
+  - playerctl
+  - swayidle
+  - papirus-icon-theme
+  - swaylock
+  - ulauncher
+  - waybar-git
+  - wdisplays
+  - fish
+  - xfce-polkit
+  - fontawesome5-fonts
+  - light
+  - dbus-daemon
+  - tlp
+  - pamixer
+  - river-git
+  - wireguard-tools
+  - podman-docker
+  - podman-compose
+  - libratbag-ratbagd
+  - kanshi
+  - grim
+  - slurp
+  - gnome-tweaks
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
@@ -9,3 +44,9 @@ flatpaks:
   - org.gustavoperedo.FontDownloader
   - com.github.tchx84.Flatseal
   - io.github.celluloid_player.Celluloid
+  - org.pipewire.Helvum
+  - org.pulseaudio.pavucontrol
+  - com.raggesilver.Blackbox
+  - lou.wezfurlong.wezterm
+  - ca.desrt.dconf-editor
+  - com.discordapp.Discord
