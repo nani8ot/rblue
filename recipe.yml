@@ -38,6 +38,7 @@ rpms:
   - blueman
   - lxqt-panel
   - way-displays
+  - wlr-randr
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
