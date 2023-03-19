@@ -39,6 +39,7 @@ rpms:
   - lxqt-panel
   - way-displays
   - wlr-randr
+  - wl-mirror
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
