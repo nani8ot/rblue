@@ -22,10 +22,8 @@ RUN systemctl mask systemd-rfkill.service systemd-rfkill.socket power-profiles-d
 
 RUN echo "-- Installing RPMs defined in recipe.yml --" && \
     rpm_packages=$(yq '.rpms[]' < /etc/ublue-recipe.yml) && \
-    for pkg in $rpm_packages; do \
-        echo "Installing: ${pkg}" && \
-        rpm-ostree install $pkg; \
-    done && \ 
+    echo "Installing: ${pkg}" && \
+    rpm-ostree install $rpm_packages; \
     echo "---"
 
 RUN rm -rf \
