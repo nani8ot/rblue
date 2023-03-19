@@ -37,6 +37,7 @@ rpms:
   - gnome-tweaks
   - blueman
   - lxqt-panel
+  - way-displays
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
