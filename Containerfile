@@ -21,6 +21,8 @@ wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-"${F
 # mask rfkill and power-profiles-daemon, to make tlp work (systemd preset in usr)
 RUN systemctl mask systemd-rfkill.service systemd-rfkill.socket power-profiles-daemon.service
 
+RUN rpm-ostree install hyprland
+
 RUN echo "-- Installing RPMs defined in recipe.yml --" && \
     rpm_packages=$(yq '.rpms[]' < /etc/ublue-recipe.yml) && \
     echo "Installing: ${pkg}" && \
