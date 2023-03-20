@@ -25,7 +25,6 @@ rpms:
   - dbus-daemon
   - tlp
   - pamixer
-  - river-git
   - wireguard-tools
   - podman-docker
   - podman-compose
