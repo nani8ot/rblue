@@ -9,7 +9,6 @@ rpms:
   - corectrl
   - ddcutil
   - mako
-  - sway
   - swaybg
   - lm_sensors
   - playerctl
