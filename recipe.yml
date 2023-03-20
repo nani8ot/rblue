@@ -32,7 +32,6 @@ rpms:
   - kanshi
   - grim
   - slurp
-  - gnome-tweaks
   - blueman
   - lxqt-panel
   - way-displays
