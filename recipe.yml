@@ -40,6 +40,8 @@ rpms:
   - wl-mirror
   - river
   - sway
+  - hyprland
+  - xdg-desktop-portal-hyprland
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
