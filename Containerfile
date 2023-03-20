@@ -17,8 +17,8 @@ wget https://copr.fedorainfracloud.org/coprs/nani8ot/river-git/repo/fedora-"${FE
 wget https://copr.fedorainfracloud.org/coprs/nani8ot/waybar-git/repo/fedora-"${FEDORA_MAJOR_VERSION}"/nani8ot-waybar-git-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/_copr_nani8ot-waybar-git.repo && \
 wget https://copr.fedorainfracloud.org/coprs/nani8ot/way-displays/repo/fedora-"${FEDORA_MAJOR_VERSION}"/nani8ot-way-displays-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/_copr_nani8ot-way-displays.repo
 
-RUN wget https://github.com/hyprwm/Hyprland/releases/download/v0.20.1beta/v0.20.1beta.tar.gz && \
-    tar -xvf v0.20.1beta.tar.gz Hyprland hyprctl libwlroots.so.12032 && \
+RUN wget https://github.com/hyprwm/Hyprland/releases/download/v0.23.0beta/v0.23.0beta.tar.gz && \
+    tar -xvf v0.23.0beta.tar.gz Hyprland hyprctl libwlroots.so.12032 && \
     mv Hyprland hyprctl /usr/bin/ && \
     mv libwlroots.so.12032 /usr/lib/
 
