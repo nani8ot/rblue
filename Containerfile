@@ -19,8 +19,8 @@ wget https://copr.fedorainfracloud.org/coprs/nani8ot/way-displays/repo/fedora-"$
 
 RUN wget https://github.com/hyprwm/Hyprland/releases/download/v0.23.0beta/v0.23.0beta.tar.gz && \
     tar -xvf v0.23.0beta.tar.gz hyprland/Hyprland hyprland/hyprctl hyprland/libwlroots.so.12032 && \
-    mv Hyprland hyprctl /usr/bin/ && \
-    mv libwlroots.so.12032 /usr/lib/
+    mv hyprland/Hyprland hyprland/hyprctl /usr/bin/ && \
+    mv hyprland/libwlroots.so.12032 /usr/lib/
 
 # mask rfkill and power-profiles-daemon, to make tlp work (systemd preset in usr)
 RUN systemctl mask systemd-rfkill.service systemd-rfkill.socket power-profiles-daemon.service
