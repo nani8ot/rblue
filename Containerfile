@@ -23,7 +23,6 @@ RUN systemctl mask systemd-rfkill.service systemd-rfkill.socket power-profiles-d
 
 RUN rpm -q --whatrequires pixman
 RUN rpm -q --whatrequires xorg-x11-server-common
-RUN rpm -q --whatrequires xorg-x11-server-Xorg
 RUN rpm -q --whatrequires xorg-x11-server-Xwayland
 RUN rpm-ostree install hyprland
 
