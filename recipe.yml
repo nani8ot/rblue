@@ -38,6 +38,8 @@ rpms:
   - way-displays
   - wlr-randr
   - wl-mirror
+  - river
+  - sway
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
