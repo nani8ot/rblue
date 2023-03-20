@@ -13,4 +13,4 @@ export XDG_SESSION_TYPE=wayland
 export XDG_SESSION_DESKTOP=hyprland
 export XDG_CURRENT_DESKTOP=hyprland
 
-systemd-cat --identifier=hyprland /usr/bin/hyprland -log-level debug $@
+systemd-cat --identifier=hyprland /usr/bin/Hyprland $@
