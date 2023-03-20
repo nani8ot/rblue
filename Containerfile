@@ -22,6 +22,9 @@ wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-"${F
 RUN systemctl mask systemd-rfkill.service systemd-rfkill.socket power-profiles-daemon.service
 
 RUN rpm -q --whatrequires pixman
+RUN rpm -q --whatrequires xorg-x11-server-common
+RUN rpm -q --whatrequires xorg-x11-server-Xorg
+RUN rpm -q --whatrequires xorg-x11-server-Xwayland
 RUN rpm-ostree install hyprland
 
 RUN echo "-- Installing RPMs defined in recipe.yml --" && \
