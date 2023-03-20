@@ -16,6 +16,7 @@ RUN wget https://copr.fedorainfracloud.org/coprs/david35mm/pamixer/repo/fedora-"
 wget https://copr.fedorainfracloud.org/coprs/nani8ot/river-git/repo/fedora-"${FEDORA_MAJOR_VERSION}"/nani8ot-river-git-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/_copr_nani8ot-river-git.repo && \
 wget https://copr.fedorainfracloud.org/coprs/nani8ot/waybar-git/repo/fedora-"${FEDORA_MAJOR_VERSION}"/nani8ot-waybar-git-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/_copr_nani8ot-waybar-git.repo && \
 wget https://copr.fedorainfracloud.org/coprs/nani8ot/way-displays/repo/fedora-"${FEDORA_MAJOR_VERSION}"/nani8ot-way-displays-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/_copr_nani8ot-way-displays.repo
+wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-"${FEDORA_MAJOR_VERSION}"/solopasha-hyprland-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/_copr_solopasha-hyprland.repo
 
 
 # mask rfkill and power-profiles-daemon, to make tlp work (systemd preset in usr)
@@ -34,4 +35,5 @@ RUN rm -rf \
 	rm -f /etc/yum.repos.d/_copr_nani8ot-river-git.repo && \
 	rm -f /etc/yum.repos.d/_copr_nani8ot-waybar-git.repo && \
 	rm -f /etc/yum.repos.d/_copr_nani8ot-way-displays.repo && \
+	rm -f /etc/yum.repos.d/_copr_solopasha-hyprland.repo && \
     ostree container commit

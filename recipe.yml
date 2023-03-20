@@ -40,6 +40,8 @@ rpms:
   - way-displays
   - wlr-randr
   - wl-mirror
+  - hyprland
+  - xdg-desktop-portal-hyprland
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
