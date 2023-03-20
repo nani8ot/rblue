@@ -24,7 +24,7 @@ RUN systemctl mask systemd-rfkill.service systemd-rfkill.socket power-profiles-d
 RUN rpm -q --whatrequires pixman
 RUN rpm -q --whatrequires xorg-x11-server-common ; echo yay
 RUN rpm -q --whatrequires xorg-x11-server-Xwayland ; echo yay
-RUN rpm-ostree override remove pixman xorg-x11-server-Xwayland
+RUN rpm-ostree override remove pixman xorg-x11-server-Xwayland xorg-x11-server-Xorg
 RUN rpm-ostree install hyprland
 
 RUN echo "-- Installing RPMs defined in recipe.yml --" && \
