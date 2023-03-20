@@ -21,10 +21,10 @@ wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-"${F
 # mask rfkill and power-profiles-daemon, to make tlp work (systemd preset in usr)
 RUN systemctl mask systemd-rfkill.service systemd-rfkill.socket power-profiles-daemon.service
 
-RUN rpm -q --whatrequires pixman
-RUN rpm -q --whatrequires xorg-x11-server-common ; echo yay
-RUN rpm -q --whatrequires xorg-x11-server-Xwayland ; echo yay
-RUN rpm-ostree override remove pixman xorg-x11-server-Xwayland xorg-x11-server-Xorg xorg-x11-drv-intel xorg-x11-drv-wacom
+# RUN rpm -q --whatrequires pixman
+# RUN rpm -q --whatrequires xorg-x11-server-common ; echo yay
+# RUN rpm -q --whatrequires xorg-x11-server-Xwayland ; echo yay
+# RUN rpm-ostree override remove pixman xorg-x11-server-Xwayland xorg-x11-server-Xorg xorg-x11-drv-intel xorg-x11-drv-wacom
 RUN rpm-ostree install hyprland
 
 RUN echo "-- Installing RPMs defined in recipe.yml --" && \
