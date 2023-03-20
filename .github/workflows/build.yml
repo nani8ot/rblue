@@ -2,7 +2,7 @@ name: build-ublue
 on:
   pull_request:
     branches:
-      - main
+      - hyprland
     paths-ignore:
       - "**.md"
       - "**.txt"
