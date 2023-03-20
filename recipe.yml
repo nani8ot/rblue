@@ -38,7 +38,7 @@ rpms:
   - way-displays
   - wlr-randr
   - wl-mirror
-  - river
+  - river-git
   - sway
   - hyprland
   - xdg-desktop-portal-hyprland
