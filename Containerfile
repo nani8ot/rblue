@@ -21,6 +21,9 @@ wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-"${F
 # mask rfkill and power-profiles-daemon, to make tlp work (systemd preset in usr)
 RUN systemctl mask systemd-rfkill.service systemd-rfkill.socket power-profiles-daemon.service
 
+# set default terminal, since xdg-terminal-exec is not yet available https://gitlab.gnome.org/GNOME/glib/-/issues/338
+RUN ln -s /usr/bin/foot /usr/bin/xterm
+
 RUN echo "-- Installing RPMs defined in recipe.yml --" && \
     rpm_packages=$(yq '.rpms[]' < /etc/ublue-recipe.yml) && \
     echo "Installing: ${pkg}" && \
