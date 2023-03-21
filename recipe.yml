@@ -42,6 +42,7 @@ rpms:
   - hyprland
   - xdg-desktop-portal-hyprland
   - wofi
+  - greetd
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
