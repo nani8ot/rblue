@@ -44,6 +44,7 @@ rpms:
   - wofi
   - greetd
   - btop
+  - gnome-software
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
