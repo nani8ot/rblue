@@ -45,6 +45,8 @@ rpms:
   - greetd
   - btop
   - gnome-software
+  - nethogs
+  - gamescope
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
