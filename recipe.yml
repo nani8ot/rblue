@@ -48,6 +48,7 @@ rpms:
   - nethogs
   - gamescope
   - rofi-wayland
+  - flameshot
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
