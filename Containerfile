@@ -18,6 +18,10 @@ wget https://copr.fedorainfracloud.org/coprs/nani8ot/waybar-git/repo/fedora-"${F
 wget https://copr.fedorainfracloud.org/coprs/nani8ot/way-displays/repo/fedora-"${FEDORA_MAJOR_VERSION}"/nani8ot-way-displays-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/_copr_nani8ot-way-displays.repo && \
 wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-"${FEDORA_MAJOR_VERSION}"/solopasha-hyprland-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/_copr_solopasha-hyprland.repo
 
+# install cliphist, change version accordingly
+RUN wget https://github.com/sentriz/cliphist/releases/download/v0.4.0/v0.4.0-linux-amd64 -O /usr/bin/cliphist && \
+	chmod +x /usr/bin/cliphist
+
 # mask rfkill and power-profiles-daemon, to make tlp work (systemd preset in usr)
 RUN systemctl mask systemd-rfkill.service systemd-rfkill.socket power-profiles-daemon.service
 
