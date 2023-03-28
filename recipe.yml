@@ -47,6 +47,7 @@ rpms:
   - gnome-software
   - nethogs
   - gamescope
+  - rofi-wayland
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
@@ -62,3 +63,4 @@ flatpaks:
   - lou.wezfurlong.wezterm
   - ca.desrt.dconf-editor
   - com.discordapp.Discord
+  - org.flameshot.Flameshot
