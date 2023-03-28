@@ -13,4 +13,4 @@ export XDG_SESSION_TYPE=wayland
 export XDG_SESSION_DESKTOP=sway
 export XDG_CURRENT_DESKTOP=sway
 
-systemd-cat --identifier=sway /usr/bin/sway -log-level debug $@
+systemd-cat --identifier=sway /usr/bin/sway
