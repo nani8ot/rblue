@@ -46,6 +46,7 @@ rpms:
   - rofi-wayland
   - flameshot
   - pcmanfm
+  - chezmoi
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
