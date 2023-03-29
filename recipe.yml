@@ -16,7 +16,7 @@ rpms:
   - papirus-icon-theme
   - swaylock
   - ulauncher
-  - waybar-git
+  - waybar
   - wdisplays
   - fish
   - xfce-polkit
