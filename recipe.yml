@@ -45,6 +45,7 @@ rpms:
   - gamescope
   - rofi-wayland
   - flameshot
+  - pcmanfm
 flatpaks:
   - org.mozilla.firefox
   - org.mozilla.Thunderbird
