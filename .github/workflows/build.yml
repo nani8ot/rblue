@@ -32,9 +32,9 @@ jobs:
       fail-fast: false
       matrix:
         image_name: [startingpoint]
-        major_version: [38]
+        major_version: [37]
         include:
-          - major_version: 38
+          - major_version: 37
             is_latest_version: true
             is_stable_version: true
     steps:
